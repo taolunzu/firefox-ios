@@ -144,17 +144,14 @@ class SearchTests: BaseTestCase {
         waitForValueContains(app.textFields["url"], value: searchEngine.lowercased())
         }
 
-    func testSearchEngine1() {
+    func testSearchEngine() {
         // Change to the each search engine and verify the search uses it
         changeSearchEngine(searchEngine: "Bing")
         changeSearchEngine(searchEngine: "DuckDuckGo")
         changeSearchEngine(searchEngine: "Google")
         changeSearchEngine(searchEngine: "Twitter")
         changeSearchEngine(searchEngine: "Wikipedia")
-    }
-
-    func testSearchEngine2() {
-        changeSearchEngine(searchEngine: "Amazon.com")
+        // changeSearchEngine(searchEngine: "Amazon.com")
         changeSearchEngine(searchEngine: "Yahoo")
     }
 
